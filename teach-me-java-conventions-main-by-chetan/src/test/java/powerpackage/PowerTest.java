@@ -1,9 +1,11 @@
 package powerpackage;
 
-import org.junit.Test;
-import static org.junit.Assert.assertEquals;
+import org.junit.jupiter.api.Test;
 
-public class PowerFinderTest {
+import static org.junit.jupiter.api.Assertions.*;
+
+class PowerTest {
+
     @Test
     public void testOneRaisedToOneIsOne() {
         assertEquals(1, PowerFinder.calculatePower(1, 1));
@@ -24,3 +26,5 @@ public class PowerFinderTest {
         assertEquals(9, PowerFinder.calculatePower(3, 2));
     }
 }
+
+
