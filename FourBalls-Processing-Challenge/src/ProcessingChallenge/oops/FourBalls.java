@@ -18,13 +18,11 @@ public class FourBalls extends PApplet {
 
     @Override
     public void settings() {
-//        Set the window width and height.
         size(WIDTH, HEIGHT);
     }
 
     @Override
     public void setup() {
-//        Setup 4 balls.
         for (int ball = 1; ball <= NUMBER_OF_BALLS; ball++) {
             Balls.add(new Ball(ball, HEIGHT, NUMBER_OF_BALLS));
         }
